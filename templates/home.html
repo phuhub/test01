@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% block title %}home{% endblock %}
+{% block content %}
+	         <div class="row">
+                <div class="column1">
+					<div class="div1">
+					                
+                    <table>
+                    <tr><td><h2>ราคาทองประจำเดือน</h2</td></tr> 
+                    <tr><td>ตุลาคม</td><td>{{ oct }}</td><td>บาท</td></tr>
+					<tr><td>กันยายน</td><td>{{ sep }}</td><td>บาท</td></tr> 
+                    <tr><td>สิงหาคม</td><td> {{ aug }}</td><td>บาท</td></tr> 
+                    <tr><td>กรกฎาคม</td><td> {{ jul }}</td><td>บาท</td></tr> &nbsp;&nbsp;&nbsp;
+                    <tr><td>มิถุนายน </td><td> {{ jun }}</td><td>บาท</td></tr> 
+                    <tr><td>พฤษภาคม </td><td> {{ may }}</td><td>บาท</td></tr> 
+                    <tr><td>เมษายน </td><td> {{ apr }}</td><td>บาท</td></tr> 
+                    <tr><td>มีนาคม </td><td> {{ mar }}</td><td>บาท</td></tr> 
+                    <tr><td>กุมภาพันธ์ </td><td> {{ feb }}</td><td>บาท</td></tr> 
+                    <tr><td>มกราคม  </td><td> {{ jan }}</td><td>บาท</td></tr> 
+                    </table>
+                    
+                    </div>
+                </div>
+                <div class="column2">
+                    <img src="{{ url_for('static', filename='images/my_plot2.png') }}" width="100%" height="100%">
+                    
+                </div>
+            <div class="row">
+            <div class="column">
+                <div class="div1">
+                การพยากรณ์ &nbsp;ผลการพยากรณ์เดือนถัดไป&nbsp; คือ &nbsp;{{ prophecy }}&nbsp;
+                </div>
+            </div>
+            </div>
+        </div>
+        {% endblock %}
+        

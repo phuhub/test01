@@ -1,0 +1,37 @@
+{% extends 'usd_layout.html' %}
+{% block title %}USD{% endblock %}
+{% block content %}
+	         <div class="row">
+                <div class="column1">
+					<div class="div1">
+					                
+                    <table>
+                    <tr><td><h2>ราคาทองประจำเดือน</h2</td></tr> 
+                    <tr><td>october</td><td>{{ octusd }}</td><td>USD</td></tr>
+					<tr><td>september</td><td>{{ sepusd }}</td><td>USD</td></tr> 
+                    <tr><td>august</td><td> {{ augusd }}</td><td>USD</td></tr> 
+                    <tr><td>july</td><td> {{ julusd }}</td><td>USD</td></tr> &nbsp;&nbsp;&nbsp;
+                    <tr><td>june </td><td> {{ junusd }}</td><td>USD</td></tr> 
+                    <tr><td>may </td><td> {{ mayusd }}</td><td>USD</td></tr> 
+                    <tr><td>april </td><td> {{ aprusd }}</td><td>USD</td></tr> 
+                    <tr><td>march </td><td> {{ marusd }}</td><td>USD</td></tr> 
+                    <tr><td>febuary </td><td> {{ febusd }}</td><td>USD</td></tr> 
+                    <tr><td>january  </td><td> {{ janusd }}</td><td>USD</td></tr> 
+                    </table>
+                
+                    </div>
+                </div>
+                <div class="column2">
+                    <img src="{{ url_for('static', filename='images/my_plot3.png') }}" width="100%" height="100%">
+                    
+                </div>
+            <div class="row">
+            <div class="column">
+                <div class="div1">
+                การพยากรณ์ &nbsp;ผลการพยากรณ์เดือนถัดไป&nbsp;คือ &nbsp;{{ prophecy }}&nbsp;
+                </div>
+            </div>
+            </div>
+        </div>
+        {% endblock %}
+        

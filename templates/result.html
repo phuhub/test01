@@ -1,0 +1,36 @@
+{% extends 'usd_layout.html' %}
+{% block title %}result{% endblock %}
+{% block content %}
+
+<head>
+    <title>edit profile</title>
+</head>
+
+<body>
+    <div class="=container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>ผลทำนาย</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{row.0}}</td>
+                    <td>{{row.1}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div class="row">
+            <div class="column">
+                <div class="div1">
+                    การพยากรณ์ &nbsp;ผลการพยากรณ์เดือนถัดไป&nbsp; คือ &nbsp;{{ prophecy }}&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
